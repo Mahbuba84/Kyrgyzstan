@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Природа Киргизии</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto :wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e40af, #3730a3);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-image: url('https://picsum.photos/id/260/1200/600 ');
+      background-size: cover;
+      background-position: center;
+      height: 24rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero div {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="text-3xl font-bold">Природа Киргизии</h1>
+    <nav>
+      <a href="#about">О стране</a>
+      <a href="#places">Гостопримечательности</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Уникальная природа Киргизии</h2>
+      <p class="text-xl">Завораживающие горы, чистые озера и дикие степи</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section container">
+    <h2 class="text-3xl font-bold mb-6">О стране</h2>
+    <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+      Киргизия — это страна Центральной Азии с богатыми природными ресурсами.
+      Здесь расположены высокие горные хребты Тянь-Шаня, живописные озера, такие как Иссык-Куль,
+      а также бескрайние степи и пышные долины. Это идеальное место для любителей природы и активного отдыха.
+    </p>
+  </section>
+
+  <!-- Places -->
+  <section id="places" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Гостопримечательности</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://picsum.photos/id/261/600/400 " alt="Иссык-Куль">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold">Иссык-Куль</h3>
+          <p class="mt-2">Второе по величине горное озеро мира.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/262/600/400 " alt="Таш-Рабат">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold">Таш-Рабат</h3>
+          <p class="mt-2">Средневековый караван-сарай в горах.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/263/600/400 " alt="Суусамырская долина">
+        <div class="card-body">
+          <h3 class="text-xl font-semibold">Суусамырская долина</h3>
+          <p class="mt-2">Высокогорная долина между хребтами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Фотогалерея</h2>
+    <div class="grid">
+      <img src="https://picsum.photos/id/264/600/400 " alt="Гора" class="rounded shadow hover:shadow-lg transition duration-300">
+      <img src="https://picsum.photos/id/265/600/400 " alt="Озеро" class="rounded shadow hover:shadow-lg transition duration-300">
+      <img src="https://picsum.photos/id/266/600/400 " alt="Степь" class="rounded shadow hover:shadow-lg transition duration-300">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <h2 class="text-3xl font-bold mb-6">Контакты</h2>
+    <p class="mb-4">📍 Адрес: Баткен, Киргизия</p>
+    <p class="mb-4">📞 Телефон: +996 (551) 50 56 37</p>
+    <p class="mb-4">✉️ Email:kaznabekovamahbuba4@gmail.com</p>
+    <a href="#" class="btn">Связаться с нами</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Природа Киргизии. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
